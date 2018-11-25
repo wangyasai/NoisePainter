@@ -46,8 +46,9 @@ Site:
 pic.loadPixels();
 
 if(pic.height > height-50 || pic.width > width-50){
-  scale(0.8);
-  translate(width/2-pic.width*0.8/2, height/2-pic.height*0.8/2);
+  var sca = height/pic.height;
+  scale(sca);
+  translate(width/2-pic.width*sca/2, height/2-pic.height*sca/2);
 
 }else{
   scale(1);
