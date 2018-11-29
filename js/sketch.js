@@ -112,6 +112,7 @@ function draw() {
   }
 
   frame++;
+  frameRate(15);
 }
 
 
